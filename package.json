@@ -1,14 +1,17 @@
 {
   "name": "example-cdk-api",
-  "version": "0.1.0",
+  "version": "1.0.0-beta.1",
   "bin": {
     "example-cdk-api": "bin/example-cdk-api.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build --clean",
     "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
+    "test": "tsc --build --clean && jest --runInBand $npm_config_dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvdsfif/example-cdk-api.git"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
