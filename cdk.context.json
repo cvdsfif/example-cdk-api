@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=085060613484:domainName=stratasphere.com:region=global": {
+    "Id": "/hostedzone/Z1TY7O0CBC5KH8",
+    "Name": "stratasphere.com."
+  },
+  "hosted-zone:account=085060613484:domainName=stratasphere.com:region=eu-west-2": {
+    "Id": "/hostedzone/Z1TY7O0CBC5KH8",
+    "Name": "stratasphere.com."
+  }
+}

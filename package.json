@@ -1,13 +1,14 @@
 {
   "name": "example-cdk-api",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "bin": {
     "example-cdk-api": "bin/example-cdk-api.js"
   },
   "scripts": {
     "build": "tsc --build --clean",
     "watch": "tsc -w",
-    "test": "tsc --build --clean && jest --runInBand $npm_config_dir"
+    "test": "tsc --build --clean && jest --runInBand $npm_config_dir",
+    "cdk": "npm test && npm run build && cdk deploy ExampleCdkApiStack -O ./lib/shared/cdk-exports.json && rm -rf ../example-api-client/src/shared/* && cp -rf lib/shared/* ../example-api-client/src/shared"
   },
   "repository": {
     "type": "git",
@@ -16,11 +17,14 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "20.11.19",
+    "aws-cdk": "2.133.0",
+    "cdk-typescript-lib": "^1.6.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
-    "aws-cdk": "2.133.0",
     "ts-node": "^10.9.2",
-    "typescript": "~5.3.3"
+    "typescript": "~5.3.3",
+    "typizator": "^2.4.0",
+    "typizator-handler": "^1.1.0"
   },
   "dependencies": {
     "aws-cdk-lib": "2.133.0",

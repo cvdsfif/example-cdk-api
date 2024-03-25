@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cdk-typescript-lib": "^1.6.0",
+    "json-bigint": "^1.0.0",
+    "typizator": "^2.3.0",
+    "typizator-handler": "^1.1.0"
+  }
+}

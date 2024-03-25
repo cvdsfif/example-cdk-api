@@ -1,0 +1,5 @@
+{
+  "ExampleCdkApiStack": {
+    "ApiURL": "https://test.stratasphere.com"
+  }
+}
