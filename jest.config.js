@@ -7,6 +7,6 @@ module.exports = {
   },
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ['!tests/*', '!**/dist/**/*', '!tests/**/*'],
+  collectCoverageFrom: ['!test/*', '!**/dist/**/*', '!test/**/*'],
   coverageReporters: ['json-summary', 'text']
 }

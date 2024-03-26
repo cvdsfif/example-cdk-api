@@ -1,5 +1,5 @@
 {
   "ExampleCdkApiStack": {
-    "ApiURL": "https://test.stratasphere.com"
+    "ApiURL": "https://mg3zwvpcf7.execute-api.eu-west-2.amazonaws.com/"
   }
 }

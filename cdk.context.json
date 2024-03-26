@@ -6,5 +6,10 @@
   "hosted-zone:account=085060613484:domainName=stratasphere.com:region=eu-west-2": {
     "Id": "/hostedzone/Z1TY7O0CBC5KH8",
     "Name": "stratasphere.com."
-  }
+  },
+  "availability-zones:account=085060613484:region=eu-west-2": [
+    "eu-west-2a",
+    "eu-west-2b",
+    "eu-west-2c"
+  ]
 }

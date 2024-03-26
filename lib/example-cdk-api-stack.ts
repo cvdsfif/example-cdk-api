@@ -22,13 +22,17 @@ export class ExampleCdkApiStack extends Stack {
       description: "Example CDK API",
       apiMetadata: simpleApiS.metadata,
       lambdaPath: "lambda",
+      migrationLambda: "migration",
       extraBundling: {
-        minify: false,
         externalModules: [
-          "json-bigint", "typizator", "typizator-handler"
+          "json-bigint", "typizator", "typizator-handler", "pg", "cdk-typescript-lib",
+          "@aws-sdk/client-secrets-manager", "aws-cdk-lib", "constructs"
         ]
       },
-      connectDatabase: false
+      connectDatabase: true,
+      dbProps: {
+        databaseName: "TestDatabase"
+      }
     })
 
     new CfnOutput(this, `ApiURL`, { value: mainConstruct.apiUrl })
